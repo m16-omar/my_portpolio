@@ -24,6 +24,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid red; */
 }
 
 .section1 nav {
@@ -93,6 +94,7 @@ html {
         height: 3.5625rem;
         background-color: black;
         margin-top: unset;
+        padding-left: 1.88rem;
     }
 
     .section1 .group {
@@ -105,6 +107,16 @@ html {
 
     .section1 .logo-desktop {
         display: none;
+    }
+
+    .section1 .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section1 ul{
+        height: inherit;
     }
 }
 
