@@ -13,7 +13,7 @@ html {
     max-width: 120rem;
     height: 95vh;
     border: 1px solid red;
-    background-image: url("../images/background1.svg");
+    background-image: url("../images/Rectangle\ 67.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 65% 100%;
@@ -25,6 +25,7 @@ html {
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid red; */
+    list-style-type: none;
 }
 
 .section1 nav {
@@ -75,6 +76,10 @@ html {
     display: none;
 }
 
+.section1 .menu{
+    display: none;
+}
+
 /* ABOVE HERE IS DESKTOP VIEW */
 
 @media screen and (max-width: 1055px) {
@@ -118,5 +123,88 @@ html {
     .section1 ul{
         height: inherit;
     }
+
+    .section1 .menu{
+        display: flex;
+        padding-right:  1.27rem;
+    }
 }
 
+/* LINE1 STYLES */
+
+.section1 .line1{
+    /* margin-top: 2.13rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+    grid-auto-rows: minmax(20rem, auto);
+}
+
+.section1 .boxa{
+    border: 1px solid red;
+    padding-left: 15vw;
+}
+
+.section1 .text-desktop p.one{
+    color: #000;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12.87rem;
+}
+.section1 .text-desktop p.two{
+    color: #000;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-wrap: nowrap;
+    margin-top: 3.38rem;
+}
+.section1 .text-desktop p.three{
+    color: #909090;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 1.1625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.section1 .text-mobile{
+    display: none;
+}
+
+.section1 .boxb{
+    border: 1px solid red;
+}
+
+.section1 .text-mobile{
+    display: none;
+}
+
+.section1 .boxa .icons{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.94rem;
+}
+
+.section1 .icons .i{
+    width: 3.8125rem;
+    height: 3.5rem;
+    border: 1px solid red;
+}
+/* MOBILE VIEW */
+@media screen and (max-width: 740px) {
+    .section1 .text-mobile{
+        display: flex;
+    }
+    .section1 .text-desktop{
+        display: none;
+    }
+}
